@@ -1,6 +1,13 @@
-# InternAI 🎓
+# 🎓 InternAI
 
-An AI-powered internship application optimizer for MSc Data Science students. Automatically tailors your resume and cover letter to any job description, scores ATS compatibility, and tracks all your applications — running 100% locally on your own machine.
+![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.35-FF4B4B?logo=streamlit&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-llama3.1%3A8b-black?logo=ollama&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+**An AI-powered internship application optimizer for MSc Data Science students.** Automatically tailors your resume and cover letter to any job description, scores ATS compatibility, and tracks all your applications — running 100% locally on your own machine.
 
 ---
 
