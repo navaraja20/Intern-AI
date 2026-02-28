@@ -1,0 +1,16 @@
+﻿# Build context: internai/ (root)
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.frontend.txt requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy frontend source only
+COPY frontend/ .
+
+# Streamlit config: no browser open, no email prompt, no telemetry
+RUN mkdir -p /root/.streamlit && printf '[general]\nemail = ""\n\n[browser]\ngatherUsageStats = false\nserverAddress = "0.0.0.0"\n\n[server]\nheadless = true\nenableCORS = false\nenableXsrfProtection = false\n' > /root/.streamlit/config.toml
+
+EXPOSE 8501
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
